@@ -1,0 +1,27 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.desk ul{
+    background-color: rosybrown;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.desk ul li{
+    display: inline;
+}
+.desk ul li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.desk ul li a:hover{
+    background-color:#123;
+    color:orangered;
+}

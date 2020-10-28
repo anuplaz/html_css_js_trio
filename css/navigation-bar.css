@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.container nav.desk,
+.container nav.mob{
+    width: 100%;
+    background: #362a39;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+}
+
+nav.desk ul{
+    list-style: none;
+    width: 75%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+nav.desk ul li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    line-height: 60px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+nav ul li:hover, .active{
+    background-color: grey;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.mob, .hamburger-btn {
+    display: none;
+}
+
+.mob ul{
+    margin-top: 60px;
+    background: #362a39;
+    display: none;
+}
+
+
+.mob li{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+.mob ul.active{
+    display: block;
+}
+
+header{
+
+    background: url("../images/bridge.jpeg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    position: relative;
+    margin-top: 60px;
+}
+
+@media screen and (max-width:700px){
+    nav.desk{
+        display: none;
+    }
+    nav.mob, .hamburger-btn{
+        display: block;
+    }
+    .hamburger-btn{
+        position: relative;
+    }
+    .hamburger-btn .fa{
+        position: fixed;
+        color: white;
+        font-size: 35px;
+        right: 25px;
+        top: 15px;
+        cursor: pointer;
+
+    }
+}
+

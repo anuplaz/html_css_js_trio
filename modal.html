@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Modal</h1>
+            <h4>Scroll down to subscribe the Modal</h4>
+        </header>
+        <div class="subscribe">
+            <button class="modal-btn">Subscribe Modal</button>
+        </div>
+        <div class="modal-bg">
+            <div class="modal-box">
+                <label for="name">Name: </label>
+                <input type="text" name="name">
+                <label for="email">E-Mail: </label>
+                <input type="email" name="E-mail">
+                <button>Subscribe</button>
+                <span class="modal-close">X</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    var modalBtn= document.querySelector('.modal-btn')
+    var modalBg = document.querySelector('.modal-bg')
+    var modalClose = document.querySelector('.modal-close')
+    modalBtn.addEventListener('click',function(){
+        modalBg.classList.add('active')
+    })
+    modalClose.addEventListener('click', ()=>{
+        modalBg.classList.remove('active')
+    })
+</script>
+</html>

@@ -1,0 +1,30 @@
+.container{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 10% 0;
+}
+
+.tooltip{
+    position: relative;
+    z-index: 20;
+}
+
+.tooltip span {
+    display: none;
+}
+.tooltip:hover{
+    z-index: 21;
+}
+.tooltip:hover span{
+    display: block;
+    width: 150px;
+    padding: 5px;
+    color: white;
+    background: #123;
+    text-decoration: none;
+    position: absolute;
+    border-radius: 6px;
+    top: 20px;
+    left: -10px;
+}

@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.mainmenu{
+    background-color: rosybrown;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.mainmenu li{
+    display: inline;
+}
+.mainmenu li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.mainmenu li a:hover{
+    background-color:#123;
+    color:orangered;
+}
+.dropdown{
+    position: relative;
+}
+
+.dropdownmenu {
+    display: none;
+    position: absolute;
+}
+.dropdownmenu li a{
+    display: block;
+}
+.dropdown:hover .dropdownmenu{
+    display: block;
+}

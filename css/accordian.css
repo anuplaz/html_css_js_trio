@@ -1,0 +1,17 @@
+#accordian section p{
+    display: none;
+    background-color: grey;
+}
+
+#accordian section a{
+    text-decoration: none;
+    background-color: antiquewhite;
+}
+
+#accordian section a:hover{
+    color: red;
+}
+
+#accordian section:target p{
+    display: block;
+}
