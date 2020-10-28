@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom effect</title>
+    <style>
+        .pic{
+            width: 50px;
+            height: 50px;
+        }
+        .picbig{
+            position: absolute;
+            width: 0px;
+            transition: width 0.3s linear 0s ;
+            z-index: 10;
+            -webkit-transition: width 0.3s linear 0s;
+        }   
+        .pic:hover + .picbig{
+            width: 200px;
+        }
+    </style>
+    <script>
+        function zoomPic(that){
+            that.width="300px"
+        }
+    </script>
+</head>
+<body>
+    <img class="pic" src="images/bridge.jpeg" alt="Bridge" onclick="zoomPic(this)">
+    <img class="picbig" src="images/bridge.jpeg" alt="Bridge">
+    <img class="pic" src="images/bridgedown.jpeg" alt="Bridge">
+    <img class="picbig" src="images/bridgedown.jpeg" alt="Bridge">
+</body>
+</html>
