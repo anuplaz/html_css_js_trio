@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaic Layout</title>
+    <style>
+        body{
+            color:red;
+            text-align: center;
+        }
+        #container{
+            background: #abc;
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-auto-rows: minmax(150px, auto);
+            grid-gap: 10px;
+            transform: rotate(15deg) scale(0.8);
+        }
+        #container div{
+            background: #333;
+            padding: 20px;
+        }
+        .one{
+            grid-row:1/1;
+            grid-column: 1/4;
+        }
+        .two{
+            grid-row:2/3;
+            grid-column: 1/3;
+        }
+        .three{
+            grid-row:1/1;
+            grid-column: 4/7;
+        }
+        .four{
+            grid-row:3/4;
+            grid-column: 1/7;
+        }
+        .five{
+            grid-row:2/3;
+            grid-column: 3/7;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+    </div>
+</body>
+</html>

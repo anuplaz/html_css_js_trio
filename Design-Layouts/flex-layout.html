@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        *{margin: 0px;}
+        body> div{display: flex;flex-flow: row wrap;min-width: 600px;}
+        body> div> header,nav,main,aside,footer{ background: #ccc;padding: 20px;margin:5px; border-radius: 5px;}
+        header{order:1;height: 100px; flex: 0 1 100%;}
+        nav{order:2; flex:0 1 200px;}
+        main{order:3; min-height: 200px; flex:1;}
+        aside{order:4; flex:0 1 200px;}
+        footer{order:5;height:100px;flex: 0 1 100%;}
+    </style>
+</head>
+<body>
+    <div>
+        <header>Header</header>
+        <nav>Nav</nav>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>  
+</body>
+</html>
